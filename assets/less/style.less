@@ -1,0 +1,488 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@font-face {
+  font-family: "Savoye LET";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Savoye LET"), url("../savoyeletplain.woff") format("woff");
+}
+@import "normalize";
+@import "modal";
+@import "flexbox";
+@import "helpclass";
+
+body {
+  font-family: "Savoye LET", sans-serif;
+  font-size: 16px;
+  color: black;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1655px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.wrapper {
+  .df;
+  width: 100%;
+  overflow: hidden;
+  min-height: 100vh;
+  .fc;
+}
+.header-wrapper {
+  background-image: url("../img/main-bg.jpg");
+  background-size: cover;
+  background-position: left top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  min-height: 900px;
+  header {
+    padding-top: 61px;
+    .container {
+      .block {
+        align-items: center;
+        nav {
+          ul {
+            display: flex;
+            li {
+              &:not(:last-child) {
+                margin-right: 40px;
+              }
+              font-family: "Savoye LET";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 25px;
+              line-height: 30px;
+              color: #ffffff;
+            }
+          }
+        }
+        .phone {
+          position: relative;
+          height: 40px;
+          padding: 0 49px 0 26px;
+          background: #ffffff;
+          box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.07);
+          border-radius: 100px;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 40px;
+          color: #0c0c0c;
+          &:after {
+            content: url("../img/phone.svg");
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40px;
+            height: 40px;
+            background: #ffffff;
+            box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.07);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}
+.sec1 {
+  position: relative;
+  height: 100%;
+  margin-top: 80px;
+  .container {
+    position: unset;
+    height: 100%;
+    .texts-wrap {
+      padding: 70px 0 0 0;
+      width: max-content;
+      &::before {
+        content: '';
+        background-image: url("../img/main-sec-bg.png");
+        width: 60%;
+        min-width: 890px;
+        height: 600px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+      }
+      .title {
+        h1 {
+          font-family: "Savoye LET";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 200px;
+          line-height: 116px;
+          color: #ffffff;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          z-index: 1;
+          span {
+            font-size: 100px;
+            font-weight: 400;
+            line-height: 135px;
+          }
+        }
+      }
+      .descr {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        span {
+          font-family: "Savoye LET";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 50px;
+          line-height: 38px;
+          margin-bottom: 30px;
+          margin-top: 100px;
+          text-align: left;
+          color: #ffffff;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+        a {
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 12.96px;
+          line-height: 19px;
+          text-align: left;
+          text-transform: uppercase;
+          color: #ffffff;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          background: linear-gradient(
+            90deg,
+            #ff8177 0%,
+            #ff867a 0%,
+            #ff8c7f 21%,
+            #f99185 52%,
+            #cf556c 78%,
+            #b12a5b 100%
+          );
+          border-bottom: 3px solid #b12a5b;
+          box-shadow: 0px 0px 30px 5px rgba(253, 0, 42, 0.5);
+          border-radius: 100px;
+          height: 50px;
+          width: 100%;
+          max-width: 292px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+.sec2 {
+  padding: 100px 0 180px;
+  background-image: url("../img/sec2-bg.jpg");
+  background-position: left bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .container {
+    max-width: 1370px;
+    .title {
+      margin-bottom: 65px;
+      h2 {
+        font-family: "Savoye LET";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 48px;
+        text-align: center;
+        color: #212529;
+      }
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 38px 27px;
+      .item {
+        flex: 0 0 31%;
+        .photo {
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
+            0px 2px 10px rgba(0, 0, 0, 0.12);
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .descr {
+          margin-top: 15px;
+          span {
+            font-family: "Savoye LET";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 70px;
+            line-height: 48px;
+            text-align: center;
+            color: #000000;
+          }
+          p {
+            font-family: "Savoye LET";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 48px;
+            text-align: center;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+.sec3 {
+  background-image: url("../img/sec3-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  padding: 100px 0 180px;
+  .container {
+    max-width: 1370px;
+    .title {
+      max-width: 623px;
+      margin: 0 auto 65px;
+      h2 {
+        font-family: "Savoye LET";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 48px;
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 20px;
+      }
+      p {
+        font-family: "Savoye LET";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 48px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 27px;
+      .item {
+        flex: 0 0 31%;
+        .photo {
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16),
+            0px 2px 10px rgba(0, 0, 0, 0.12);
+          img {
+            border-radius: 5px;
+          }
+        }
+        .descr {
+          margin-top: 30px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          span {
+            font-family: "Savoye LET";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 70px;
+            line-height: 48px;
+            text-align: center;
+            color: #ffffff;
+            max-width: 390px;
+          }
+          a {
+            margin-top: 30px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12.96px;
+            line-height: 19px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+            padding: 15px 34px;
+            background: linear-gradient(40deg, #ffd86f 0%, #fc6262 100%);
+            border-bottom: 3px solid #fc6262;
+            box-shadow: 0px 0px 30px 5px rgba(252, 98, 98, 0.5);
+            border-radius: 129.6px;
+            display: flex;
+            width: max-content;
+            margin: 30px auto 0;
+          }
+        }
+      }
+    }
+  }
+}
+.sec4 {
+  background-image: url("../img/sec4-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  padding: 100px 0 271px;
+  background-color:#f8f9fd;
+  .container {
+    max-width: 1170px;
+    .title {
+      margin-bottom: 65px;
+      h2 {
+        font-family: "Savoye LET";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 48px;
+        text-align: center;
+        color: #303030;
+      }
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .item {
+        padding: 100px 20px 30px;
+        flex: 0 0 32%;
+        max-width: 350px;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16),
+          0px 2px 10px rgba(0, 0, 0, 0.12);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: max-content;
+        span {
+          font-family: "Savoye LET";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 48px;
+          text-align: center;
+          color: #000000;
+          margin-bottom: 20px;
+        }
+        a {
+          margin-top: 80px;
+          background: linear-gradient(40deg, #ffd86f 0%, #fc6262 100%);
+          border-bottom: 3px solid #fc6262;
+          box-shadow: 0px 0px 30px 5px rgba(252, 98, 98, 0.5);
+          border-radius: 129.6px;
+          height: 50px;
+          width: 100%;
+          max-width: 202px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "Roboto";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12.96px;
+          line-height: 19px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #ffffff;
+        }
+        ul {
+          li {
+            font-family: "Savoye LET";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 48px;
+            text-align: center;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}
+.sec5 {
+  padding: 100px 0 50px;
+  background-image: url("../img/sec3-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    max-width: 1662px;
+    display: flex;
+    flex-direction: column;
+    .footer {
+      margin-top: 65px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .logo {
+        margin-bottom: 47px;
+      }
+      a {
+        font-family: "Savoye LET";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 48px;
+        text-align: center;
+        color: #ffffff;
+      }
+      .txt {
+        margin-top: 20px;
+        p {
+          font-family: "Savoye LET";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 30px;
+          line-height: 48px;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+    .title {
+      margin: 0 auto;
+      h2 {
+        margin-bottom: 65px;
+        font-family: "Savoye LET";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 48px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+    .items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      .item {
+        flex: 0 0 15%;
+      }
+    }
+  }
+}
+a,button {
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.8 !important; 
+  }
+}
+footer {
+  margin-top: auto;
+}
+
+@import "adaptive";
